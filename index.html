@@ -4,10 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css"
-    <script defer src="/script.js"></script>
+    <script defer src="/index.js"></script>
     <title>Uma Macchina Tattoo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    
+    <!-- header section -->
+    <header class="header">
+        <div class="top-header">
+            <span>Welcome you saucy human!</span>
+        </div>
+        <div class="bottom-header">
+            <div class="logo">
+                <img src="/public/logo.png" width="100" height="100" alt="Tattoo Logo">
+            </div>
+            <ul class="navLink">
+                <li><a href="#">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="others">
+                <a href="#" class="search"><i class="bx bx-search">Search</i></a>
+                <a href="#"><i class="bx bx-shopping-bag"></i></a>
+                <span class="bx bx-menu" id="menuBtn"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <div class="main">
+        <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img class="slide-img" src="/public/main1.png" alt="">
+            <div class="details">
+                <h6>Sague della Rosa</h6>
+                <h2>Amazing body art with custom tattoo </h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi eligendi accusamus reprehenderit consectetur expedita, nobis ab. Explicabo, inventore cum asperiores in fugit, accusantium natus dolore ratione voluptates nulla, reiciendis consequuntur!</p>
+                <div class="icon">
+                    <span><img src="/public/symbole.png" alt="bullet point">Original Prints</span>
+                    <span><img src="/public/symbole.png" alt="bullet point">Tattoos</span>
+                </div>
+                <div class="btn">
+                    <button>Shop Now <i class="bx bxs-chevrons-right"></i></button>
+                    <button>Get Tattoo <i class="bx bxs-chevrons-right"></i></button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Item section -->
+    <section class="item">
+        <div class="item-row">
+            <div class="item-col">
+                <img src="/public/shipping.png" alt="shipping logo">
+                <div class="info">
+                    <h5>Free Shipping</h5>
+                    <p>Free U.S. shipping on all orders above $50</p>
+                </div>
+            </div>
+
+            <div class="item-col">
+                <img src="/public/secure.png" alt="secure logo">
+                <div class="info">
+                    <h5>Secure Payments</h5>
+                    <p>Deposit must be done x before date</p>
+                </div>
+            </div>
+
+            <div class="item-col">
+                <img src="/public/giving.png" alt="giving logo">
+                <div class="info">
+                    <h5>5%</h5>
+                    <p>Proceeds go to X</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- group section -->
+    <section class="group">
+        <div class="group-row">
+            <div class="image">
+                <img src="public/ian.png" alt="">
+            </div>
+            <div class="info">
+                <h6>Meet the artist</h6>
+                <h3>Ian</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium eos consequatur explicabo repellendus reiciendis sed! Velit, animi. Voluptatum fugit corporis culpa optio amet voluptates maiores id ab earum magni?</p>
+
+                <div class="counter">
+                    <div class="count-col">
+                        <h4>5+</h4>
+                        <span>Years of Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
