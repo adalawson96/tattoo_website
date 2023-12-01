@@ -20,21 +20,21 @@
                 <img src="/public/logo.png" width="100" height="100" alt="Tattoo Logo">
             </div>
             <ul class="navLink">
-                <li><a href="#">home</a></li>
-                <li><a href="#">shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">prints</a></li>
+                <li><a href="#footer">contact</a></li>
             </ul>
             <div class="others">
-                <a href="#" class="search"><i class="bx bx-search">Search</i></a>
-                <a href="#"><i class="bx bx-shopping-bag"></i></a>
+                <!-- <a href="#" class="search"><i class="bx bx-search">Search</i></a>
+                <a href="#"><i class="bx bx-shopping-bag"></i></a> -->
                 <span class="bx bx-menu" id="menuBtn"></span>
             </div>
         </div>
     </header>
 
     <!-- Main -->
-    <div class="main">
+    <div class="main" id="home">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide">
@@ -85,8 +85,8 @@
         </div>
     </section>
 
-    <!-- Group Section -->
-    <section class="group">
+    <!-- About Section -->
+    <section class="group" id="about">
         <div class="group-row">
             <div class="image">
                 <img src="public/ian.png" alt="">
@@ -95,7 +95,9 @@
                 <h6>Meet the artist</h6>
                 <h3>Ian</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam accusantium eos consequatur explicabo repellendus reiciendis sed! Velit, animi. Voluptatum fugit corporis culpa optio amet voluptates maiores id ab earum magni?</p>
-                <button> Book Now</button>
+                <div class="btn">
+                    <button>Book Now <i class="bx bxs-chevrons-right"></i></button>
+                </div>
                 <div class="counter">
                     <div class="count-col">
                         <h4>5+</h4>
@@ -111,7 +113,7 @@
     </section>
 
     <!-- Product Section -->
-    <section class="product">
+    <section class="product" id="product">
         <h5>Original Prints</h5>
         <h2>Hot off the Press</h2>
         <div class="filter_button">
@@ -164,7 +166,7 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="footer-one">
             <div class="footer-col">
                 <h6>Information</h6>
