@@ -9,14 +9,36 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('clicked');
     }
 
-    // Swiper initialization
-    const swiper = new Swiper(".mySwiper", {
+    // let swiper = new Swiper(".mySwiper", {
+    //     spaceBetween: 30,
+    //     centeredSlides: true,
+    //     // loop: true,
+    //     autoplay: {
+    //         delay: 3000,
+    //         disableOnInteraction: false,
+    //     },
+    // });
+
+    // product section
+    let swiper = new Swiper(".myProduct", {
+        WatchSlidesProgress: true,
         spaceBetween: 30,
         centeredSlides: true,
-        // loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
+        loop: true,
+        breakpoints: {
+            550:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        }
+      
     });
 });
